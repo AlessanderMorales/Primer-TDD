@@ -12,5 +12,9 @@ describe('Verifica si un año es bisiesto', () => {
     it("Todos los años divisible 4 son divisible", () =>{
         expect(Bisiesto(2008)).toBe(true);
     })
+
+    it("No es divisible entre 4", () =>{
+        expect(Bisiesto(5)).toBe(false);
+    })
 });
 

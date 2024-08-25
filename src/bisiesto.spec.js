@@ -8,5 +8,9 @@ describe('Verifica si un año es bisiesto', () => {
     it("Debe retornar false para un año divisible por 100 pero no por 400 ej. 1700", () => {
         expect(Bisiesto(1700)).toBe(false);
     });
+
+    it("Todos los años divisible 4 no son divisible", () =>{
+        expect(Bisiesto(2017)).toBe(false);
+    })
 });
 
